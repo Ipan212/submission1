@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tugas SIB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+	<nav class="navbar">
+		<div class="logo"><a href="">The <span>Future</span></a></div>
+		<ul class="list">
+			<li><a href="Home">Home</a></li>
+			<li><a href="Adout">Adout</a></li>
+			<li><a href="Services">Services</a></li>
+			<li><a href="Contact">Contact</a></li>
+		</ul>
+		<a href="#" class="action_btn">Get Started</a>
+		<div class="tonggle_btn"><i class="fa-solid fa-bars"></i></div>
+	</nav>
+	<div class="dropdown ">
+		<li><a href="Home">Home</a></li>
+			<li><a href="Adout">Adout</a></li>
+			<li><a href="Services">Services</a></li>
+			<li><a href="Contact">Contact</a></li>
+			<li><a href="#" class="action_btn">Get Started</a></li>
+	</div>
+</header>
+ <main>
+ <div class="content">
+   <div class="content-description">
+     <h1 class="title">Siapa Kita Nanti..?</h1>
+     <p>Takdir memang Allah yang ngatur,tapi ingat Allah tidak akan mengunah keadaan seseorang kecuali dia sendiri yang mengusahakannya..! </p>
+     <button>Lebih lanjut</button>
+     <br><br>
+   </div>
+   <div class="content-image">
+     <img src="img/buku.png" alt="book">
+   </div>
+ </div>
+</main>
+<main>
+	<div class="isi">
+		<div class="judul">
+			<h2>Kenali diri kita..!</h2>
+		</div>
+
+		<article class="siapa box">
+			<div class="card">
+				<i class="fa-solid fa-person-praying"></i>
+				<h5>Akan Jadi Siapa kita Saat Ini..?</h5>
+				<div class="pra">
+					<p>Agar kita bisa lebih baik dimasa yang datang yang pertama kita lakukan adalah kenali siapa diri kita hari ini..?, sedang berperan sebagai siapa kita hari ini..? dan apa yang menjadi kelebihan serta kekurangan kita..?</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Lebih Lanjut</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="usaha card">
+				<i class="fa-solid fa-person-running"></i>
+				<h5>Apa Yang Sedang Kita Perjuangkan..?</h5>
+				<div class="pra">
+					<p>Setelah kita tau siapa dan sedang diposisi apa kita berada maka berjuanglah dalam peran dalam, pertahankan apa yang menjadi kelebihan kita dan kerahkan segala potensi yang ada pada diri kita..!</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Lebih Lanjut</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="nanti card">
+				<i class="fa-solid fa-person-rays"></i>
+				<h5>Itulah Kita Dimasa Depan..?</h5>
+				<div class="pra">
+					<p>Setelah kita mengerahka segala ikhtiar disertai dengan doa kepada sang pencipta, setidaknya disana kita sudah mendapatkan gambaran akan jadi seperti apa kita nanti..! </p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Lebih Lanjut</a>
+					</p>
+				</div>
+			</div>
+		</article>
+	</div>
+</main>
+<div class="join">
+	<p><strong>Ingat...!</strong> Hasil Tak Akan Pernah Menghianati Usahanya.</p>
+	<a class="btn" href="">Join With Me</a>
+</div>
+<aside>
+    <article class="profile card">
+         <header>
+             <h2>Ipan Nugraha</h2>
+             <p>Full Stack Web Develover</p>
+                <img src="assets/image/bandung.png">
+         </header>
+         <section>
+   <h3>Informasi Lainnya</h3>
+   
+   <div class="social-media">
+     <ul>
+       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+       <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+     </ul>
+</section>
+    </article>
+</aside>
+<script>
+	const t0ggleBtn = document.querySelector('.tonggle_btn')
+	const t0ggleBtIcon = document.querySelector('.tonggle_btn i')
+	const dropDownMenu = document.querySelector('.dropdown')
+
+	t0ggleBtn.onclick = function(){
+		dropDownMenu.classList.toggle('open')
+		const isOpen = dropDownMenu.classList.contains('open')
+
+		t0ggleBtIcon.classList = isOpen
+		?'fa-solid fa-xmark'
+		:'fa-solid fa-bars'
+	}
+</script>
+</body>
+</html>

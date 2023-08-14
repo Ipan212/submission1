@@ -1,0 +1,390 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	height: 100vh;
+	background-color: #000;
+	background-image: url('img/gambar22.jpg');
+	background-size: cover;
+	background-position: center;
+}
+ 
+nav {
+  position: sticky;
+  top: 0;
+}
+ ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+ 
+li {
+  list-style-type: none;
+}
+ 
+ .list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .1s ease-in-out;
+  	
+}
+ 
+.list li:hover a {
+  background-color: #FF8400;
+  color: white;
+
+}
+ a{
+	text-decoration: none;
+  	color: white;
+}
+header{
+	position: relative;
+	padding: 0 2rem;
+}
+.navbar{
+	width: 100%;
+	height: 60px;
+	max-width: 1200px;
+	max-width: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.navbar .logo span{
+	color: #FFD93D;
+}
+.navbar .list{
+	display: flex;
+	gap: 2rem;
+
+}
+.navbar .tonggle_btn{
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+.action_btn{
+	background-color: #FF8400 ;
+	color: white;
+	padding: 0.5rem 1rem;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: scale 0.2 ease;
+}
+.action_btn:hover{
+	scale: 1.05;
+	color: white;
+}
+.action_btn:active{
+	scale: 0.95;
+}
+.dropdown{
+	display: none;
+	position: absolute;
+	right: 2rem;
+	top: 40px;
+	height: 0;
+	width: 200px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	
+}
+.dropdown.open{
+	height: 300px;
+}
+.dropdown li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+.dropdown .action_btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+ li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+ 
+ li:hover a {
+  background-color: #FF8400;
+  color: white;
+  font-size: bold;
+
+  }
+  main {
+  max-width: 1200px;
+  width: 100%;
+  
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+ 
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+ 
+main .content .content-description {
+  flex: 1 1;
+}
+ 
+main .content .content-description .title {
+  font-size: 3rem;
+  margin-block: 1rem;
+  color: #FFD93D;
+}
+ 
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  color: white;
+}
+ 
+main .content .content-description button {
+  padding: .8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+ 
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #FF8400;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+ 
+main .content .content-description button:hover {
+  border: 3px solid #FFD93D;
+  color: #FFD93D;
+  background-color: transparent;
+}
+ 
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
+ 
+main .content .content-image img {
+  margin: auto;
+  min-width: 200px;
+  width: 250px;
+  color: white;
+}
+ main .content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+ 
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+ 
+  main .content .content-image {
+    order: -1;
+  }
+article.isi{
+	width: 100%;
+	padding: 100px 0px;
+
+}
+.judul h2{
+	color: white;
+	font-size: 50px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background-color: #FF8400;
+
+	border-radius: 25px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 20px 0px;
+	color: white;
+}
+h5{
+	color: white;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: black;
+	font-size: 15px;
+	line-height: 22px;
+	margin-bottom: 15px;
+}
+.pra .button{
+	 padding: .8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+ 
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-color: #FFD93D;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+ 
+.button:hover {
+  border: 3px solid black;
+  color: black;
+  background-color: transparent;
+}
+.join{
+	width: 100%;
+	height: 290px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.join p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.join .btn{
+  padding: .8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+ 
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-color: #FF8400;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+.btn:hover {
+  border: 3px solid #FFD93D;
+  color: #FFD93D;
+  background-color: transparent;
+}
+.profile header {
+  text-align: center;
+}
+ 
+.profile img {
+  width: 200px;
+}
+ 
+.profile .card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+ 
+}
+
+@media (max-width: 992px){
+	.navbar .list{
+		display: none;
+	}
+	.navbar .action_btn	{
+		display: none;
+	}
+	.navbar	.tonggle_btn{
+		display: block;
+	}
+	.dropdown{
+		display: block;
+	}
+	main {
+    padding: 1rem 3rem;
+    margin: 50px;
+  }
+ 
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+ 
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+ 
+  main .content .content-image {
+    order: -1;
+  }
+  main.isi .box{
+  	 flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
